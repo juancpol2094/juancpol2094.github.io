@@ -1,0 +1,130 @@
+body{
+    width: 100%;
+    background: #f1f0ef;
+margin: 0px
+}
+
+
+
+
+
+.logojc{
+width: 180px;
+height: 180px;  
+text-align: center;
+border-radius: 80%;
+box-shadow: -3px 3px rgba(0,0,0,1);
+
+
+}
+
+.Iconos-nav{
+
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 2px;
+
+}
+
+section{
+    width: 90%;
+margin: 0 auto;
+
+}
+
+p{
+    width: 100%;
+    text-align: center;
+    color: #313346;
+    font-family:'Lato', sans-serif;
+    font-weight: 700;
+    
+}
+
+section ul { 
+    padding: 0;
+    list-style: none;
+    max-width: 120px;
+    margin: 0 auto;
+
+
+}
+
+
+.btn { 
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    color: black;
+    font-family:'Lato', sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    background: white;
+    border: solid black 2px;
+    box-shadow: -5px 5px rgba(0,0,0,1);
+    text-align: center;
+}
+
+
+
+section{
+    min-height: 50vh;
+}
+
+section div ul{
+    padding-inline-start: 10px;
+    text-align: center;
+   
+
+}
+
+
+footer{
+    width: 90%;
+    margin: 0 auto;
+
+}
+footer p{
+    text-align: left;
+}
+
+.descripcion {
+    padding: 0 25px;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+.btn:hover{
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    font-family:'Lato', sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    background: black;
+    border: solid rgb(16, 8, 163) 2px;
+    box-shadow: -5px 5px rgb(16, 8, 163,1);
+    text-align: center;
+    font-size: 17px;
+}
+
+
+footer  div {
+float: left;
+list-style: none;
+width: 49%;
+margin: 0.5%;
+
+}
+
+
+
+
+#copyright{
+
+    text-align: right;
+}
