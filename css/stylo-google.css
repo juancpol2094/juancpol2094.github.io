@@ -3,7 +3,7 @@ body{
     margin: 0px;
     width: 100%;
     font-size: 14px;
-    font-family: arial,sans-serif;
+    font-family:'Roboto', sans-serif;
     color: #202124;
 }
 
@@ -156,7 +156,7 @@ div.contenedor1 div.googleimg{
     height: 24px;
 }
 .contenedor2{
-    padding:20px;
+    padding:0px;
     max-height: 160px;
     box-sizing: border-box;
 
@@ -219,6 +219,12 @@ div.contenedor1 div.googleimg{
     flex: 100%;
 }
 
+.contenedorbuscador:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+  }
+
 .botones-icon{
     display: flex;
     flex-direction: row;
@@ -265,7 +271,7 @@ div.contenedor1 div.googleimg{
     display: flex;
     justify-content: center;
 min-height: 52px;
-height: 192px;
+
 }
 
 .contenedor3x{
@@ -281,7 +287,7 @@ height: 192px;
     font-size: small;
     text-align: center;
     line-height: 28px;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -291,6 +297,8 @@ width: 100%;
         box-sizing: border-box;
         flex-shrink: 0;  
         display: grid;
+        position: fixed;
+        bottom: 0;
 
 
 }
@@ -306,9 +314,15 @@ footer div.contenedorf{
 footer div.contenedorf2{
 
 padding: 0 20px;
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 10px;
 
 
 }
+
+
 
 .contenedorf2w{
 
@@ -342,4 +356,77 @@ a.fbutton2{
     text-decoration: none;
     color: #70757a;
 
+}
+
+
+
+
+.milka {
+    border-radius: 10px;
+    box-shadow: -1px -1px 5px rgba(0, 0, 0,0.5);
+    position: fixed;
+    top: 9vh;
+    right: 40px;
+    padding: 12px;
+    width: 280px;
+    height: 400px;
+    background-color:white;
+    display: none;
+    color: black;
+    overflow-y: scroll;
+    opacity: 1;
+  }
+  
+.milka.active {
+    display: block;
+
+  }
+
+.IconoChocolate{
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+justify-content: space-around
+}
+
+div.IconoChocolate a.btnchc img{
+    width: 64px;
+    height: 64px;
+    list-style-type: none;
+padding: 6px;
+    position: relative;
+    transition: transform .2s cubic-bezier(.333,0,0,1);
+    vertical-align: top;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+
+.chocolista{
+    padding-top: 10px;
+    padding: 0 0 0 14px ;
+    
+}
+
+.mundo {
+    color: #202124;
+    font-family: "Google Sans",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.15px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 56px;
+    align-items: center;
+    text-align: -webkit-match-parent;
+}
+
+.mundo2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center
+}
+
+div.mundo2 span.mundo{
+    margin: -5px;
 }
