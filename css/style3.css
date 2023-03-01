@@ -297,19 +297,19 @@ select {
     
  }
 
- .borrada{
+ .borrx{
     border: none;
     margin-left: 10px;
     transition: all 0.1s;
     background-color: rgba(40, 40, 43, 0.27);
  }
 
- .borrada:hover{
+ .borrx:hover{
     cursor: pointer;
     transform: scale(1.1);
   }
  
-  .borrada:active{
+  .borrx:active{
     transform: scale(0.9);
   }
 
