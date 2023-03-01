@@ -19,13 +19,13 @@ btn.addEventListener('click', function () {
     */
     
 let listavacia = document.getElementById("listavacia");
-let agregarContainer = document.getElementById("listado");
-let btnAdd = document.getElementById("centericon23");
-let btnCancelar = document.getElementById("cancelam");
-let btnConfirmar = document.getElementById("agregam");
+let addcontainer = document.getElementById("listado");
+let agregarboton = document.getElementById("centericon23");
+let cbutton = document.getElementById("cancelam");
+let cfbutton = document.getElementById("agregam");
 let color = document.querySelector('input[name="colorsito"]:checked');
-let tareas = document.getElementById("tasks");
-let tareasPendientes = document.getElementById("tareasPendientes");
+let task = document.getElementById("tasks");
+let taskP = document.getElementById("taskP");
 let btnBorrar = document.getElementById("btnBorrar");
 
 //Inputs
@@ -35,33 +35,33 @@ let descripcionTxt = document.getElementById("Descriptarea2");
 
 let cantidadDeTareas = 0;
 
-btnAdd.addEventListener("click", () => {
+agregarboton.addEventListener("click", () => {
   if (cantidadDeTareas <= 0) {
     listavacia.classList.toggle("hidden");
-    agregarContainer.classList.toggle("active");
-    btnAdd.classList.toggle("active");
+    addcontainer.classList.toggle("active");
+    agregarboton.classList.toggle("active");
   }
 
   if (cantidadDeTareas >= 1) {
     listavacia.classList.add("hidden");
-    agregarContainer.classList.toggle("active");
-    tareas.style.display = "none";
-    btnAdd.classList.toggle("active");
+    addcontainer.classList.toggle("active");
+    task.style.display = "none";
+    agregarboton.classList.toggle("active");
   }
 });
 
-btnCancelar.addEventListener("click", () => {
+cbutton.addEventListener("click", () => {
   if (cantidadDeTareas <= 0) {
     listavacia.classList.toggle("hidden");
-    agregarContainer.classList.toggle("active");
-    btnAdd.classList.toggle("active");
+    addcontainer.classList.toggle("active");
+    agregarboton.classList.toggle("active");
   }
 
   if (cantidadDeTareas >= 1) {
-    agregarContainer.classList.add("hidden");
-    agregarContainer.classList.remove("active");
-    tareas.style.display = "flex";
-    btnAdd.classList.toggle("active");
+    addcontainer.classList.add("hidden");
+    addcontainer.classList.remove("active");
+    task.style.display = "flex";
+    agregarboton.classList.toggle("active");
   }
 });
 
@@ -71,34 +71,34 @@ const enviarDatos = () => {
   let nombreTarea = nomtarea.value;
   let descripcion = Descriptarea2.value;
   let tipoDeTarea = lang.value;
-  let color = document.querySelector('input[name="colorsito"]:checked')
+  let color = document.querySelector('input[name="colors"]:checked')
   .classList[1];
   console.log(nombreTarea, tipoDeTarea, descripcion, color);
 };
 
-btnConfirmar.addEventListener("click", () => {
+cfbutton.addEventListener("click", () => {
     let nombreTarea = nomtarea.value;
   let descripcion = Descriptarea2.value;
   let tipoDeTarea = lang.value;
-  let color = document.querySelector('input[name="colorsito"]:checked')
+  let color = document.querySelector('input[name="colors"]:checked')
   .classList[1];
   console.log(nombreTarea, tipoDeTarea, descripcion, color);
 
   if (tipoDeTarea == "trabajo") {
-    imgTipo = "/images/tipo/briefcase.svg";
+    imgtype = "/images/tipo/briefcase.svg";
   }
   if (tipoDeTarea == "personal") {
-    imgTipo = "/images/tipo/personal.svg";
+    imgtype = "/images/tipo/personal.svg";
   }
   if (tipoDeTarea == "domestica") {
-    imgTipo = "/images/tipo/casa.svg";
+    imgtype = "/images/tipo/casa.svg";
   }
   if (tipoDeTarea == "Entretenimiento") {
-    imgTipo = "/images/tipo/gamepad.svg";
+    imgtype = "/images/tipo/gamepad.svg";
   }
 
   if (tipoDeTarea == "monetaria") {
-    imgTipo = "/images/tipo/usd-circle.svg";
+    imgtype = "/images/tipo/usd-circle.svg";
   }
 
   if (color == "purpura") {
@@ -115,14 +115,14 @@ btnConfirmar.addEventListener("click", () => {
   }
 
   cantidadDeTareas++;
-  agregarContainer.classList.add("hidden");
-  agregarContainer.classList.remove("active");
-  tareas.style.display = "flex";
-  btnAdd.classList.toggle("active");
+  addcontainer.classList.add("hidden");
+  addcontainer.classList.remove("active");
+  task.style.display = "flex";
+  agregarboton.classList.toggle("active");
 
-  tareaPendiente = `<div id="tareasPendientes" class="tareaspendientes">
+  tareaPendiente = `<div id="taskP" class="taskp">
   <div class="colortarea ${colorFondo}">
-    <img src=" ${imgTipo}" alt=""  width="20" />
+    <img src=" ${imgtype}" alt=""  width="20" />
   </div>
   <div class="data">
     <p id="nombretarea"><strong>${nombreTarea}</strong></p>
@@ -136,7 +136,7 @@ btnConfirmar.addEventListener("click", () => {
   </div>
 </div>`;
 
-  tareas.innerHTML += tareaPendiente;
+  task.innerHTML += tareaPendiente;
 
   nomtarea.value = "";
   Descriptarea2.value = "";
