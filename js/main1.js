@@ -120,7 +120,7 @@ cfbutton.addEventListener("click", () => {
   task.style.display = "flex";
   agregarboton.classList.toggle("active");
 
-  tareaPendiente = `<div id="taskP" class="taskp">
+  tareaPendiente = `<div class="taskp">
   <div class="colortarea ${colorFondo}">
     <img src=" ${imgtype}" alt=""  width="20" />
   </div>
