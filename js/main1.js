@@ -131,7 +131,7 @@ cfbutton.addEventListener("click", () => {
   <div class="botonestarea">
     <input type="checkbox" name="" id="completada" />
     <button id="btnBorrar" class="borrada">
-      <img class="remover" src="/images/icons8-borrar-para-siempre.gif"  alt="" />
+      <img class="remover" src="/images/garbage-removebg-preview.png"  alt="" />
     </button>
   </div>
 </div>`;
