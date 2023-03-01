@@ -1,17 +1,20 @@
 body{
-    background-color: black;
+    background-color: #121212;
     color: white;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    
 }
 
 nav{
-    background: gray;
+    background: rgba(9, 5, 131, 0.49);
     display: flex;
     justify-content: space-between;
+    padding: 1px;
+    margin: 0 auto;
 }
 
 .icononav{
@@ -25,6 +28,7 @@ display: flex;
     align-items: center;
     margin: 0 auto;
     margin-top: 20px;
+    flex-direction: column;
 }
 
 .centericon{
@@ -33,23 +37,10 @@ display: flex;
     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
 }
 
-section{
-width: 100%;
-display: flex;
-flex-direction: column;
-flex-grow: 1;
-justify-content: center;
-}
 
-footer{
-    width: 100%;
-    background: white;
-    opacity: 0.4;
-    box-sizing: border-box;
-    color: red;
-    display: flex;
 
-}
+
+
 
 .hola{
     fill: white;
@@ -64,10 +55,11 @@ footer{
 
 
 .iconoadd{
-    box-sizing: border-box;
-    height: 0px;
-    justify-content: flex-end;
     display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    color: #eb5c48;
+    position:static
 }
 
 .centericon2{
@@ -76,22 +68,36 @@ footer{
 }
 
 .navicon2{
-    width: 22px;
+    width: 25px;
     padding: 10px;
 }
 
 .listado{
     display: none;
-    width: 300px;
-    background: gray;
-    border: blue;
-    border-color: blue;
-    height: 300px;
-    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
 .listado.active {
     display: block;
 }
+
+.pop-uno {
+    color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    width: 250px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
 .listavacia.active {
     display: none;
 }
@@ -121,3 +127,272 @@ select {
     align-items: center;
 }
 
+.nomtarea {
+    border: 1px solid #dee2e6;
+    border-radius: .375rem;
+}
+
+.form-label {
+    margin-bottom: .5rem;
+}
+
+.nombretarea {
+    margin-bottom: 1rem!important;
+}
+
+.tareatype {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+}
+
+.Descriptarea {
+    height: 91px;
+    width: 90%;
+    resize: none;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+}
+
+.barra-prioridad {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cancelam {
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    border: 1px solid greenyellow;
+    padding: 5px;
+    margin-right: 10px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+}
+
+.agregam {
+    color: white;
+    background-color:black;
+    border-radius: 4px;
+    border: 1px solid greenyellow;
+    padding: 5px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+}
+
+.cancelam:hover{
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    border: 2px solid greenyellow;
+    padding: 5px;
+    margin-right: 10px;
+
+}
+
+.agregam:hover{
+    color: white;
+    background-color:black;
+    border-radius: 4px;
+    border: 2px solid greenyellow;
+    padding: 5px;
+
+}
+
+.hidden{
+    display: none;
+ }
+
+ #checkbox{
+    appearance: none;
+    
+    width:36px;
+    height: 20px;
+    transition: all 0.1s ;
+ }
+
+ #checkbox:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+
+ #checkbox:active{
+    transform: scale(0.9);
+ }
+
+ #checkbox:checked{
+    transform: scale(1.2);
+    border: 3px solid #0fa0c1;
+ }
+
+ .purpura{
+    background-color: #854BB3;
+ }
+ .verde{
+    background-color: #7CBE0F;
+ }
+ .amarillo{
+    background-color: #FFB72D;
+ }
+ .rojo{
+    background-color: #C83232;
+ }
+
+ .color{
+    width:20px;
+    height: 20px;
+    border-radius: 8px;
+    transition: all 0.1s ;
+ }
+
+ .color:hover{
+    cursor: pointer;
+    translate: 0px -3px;
+ }
+
+ .color:active{
+    transform:scale(0.8);
+ }
+
+ .colores{
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    margin-top: 10px;
+ }
+
+ .tareaspendientes{
+    display: flex;
+    height: 60px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.933);
+    border-radius: 8px;
+    margin-top: 1%;
+    justify-content: space-between;
+    color: black;
+    
+ }
+
+ .borrada{
+    border: none;
+    margin-left: 10px;
+    transition: all 0.1s;
+ }
+
+ .borrada:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+ 
+  .borrada:active{
+    transform: scale(0.9);
+  }
+
+  #completada{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 8px;
+    border: 2px solid #121212;
+    transition: all 0.2s;
+ }
+ 
+ #completada:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+ }
+ 
+ #completada:checked{
+    background-color: #03813b;
+    background-image: url(/images/tip2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+ }
+ 
+ #completada:active{
+    transform: scale(1);
+ }
+ 
+ #nombretarea{
+    padding: 5px;
+    margin: 5px;
+  }
+ 
+  #descripciontarea{
+    padding: 5px;
+    margin: -7px 0px -12px 5px;
+  }
+
+.tasks{
+    color: black;
+    width: 100%;
+    height: 85%;
+    background-color: #121212;
+    flex-direction: column;
+    display: none;
+    margin-top: 15px;
+    align-items: center;
+    overflow-wrap: auto;
+   
+    
+    
+ }
+
+ .botonestarea{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    
+ }
+
+ .data {
+    width: 80%;
+    height: 90%;
+ }
+
+ .colortarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.remover{
+    width: 30px;
+    
+}
+
+.todolist{
+    color: white;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
